@@ -43,7 +43,7 @@ Command:    i
 
 ```gic
 S -> _
-S -> S C
+S -> C
 C -> i | d | s | o
 ```
 
