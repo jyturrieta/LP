@@ -19,7 +19,7 @@ El lenguaje elegido es **Deadfish**.
 
 ```gic
 S -> _
-S -> C
+S -> S C
 C -> i | d | s | o
 ```
 
@@ -33,7 +33,7 @@ C -> i | d | s | o
 ### EBNF
 
 ```ebnf
-<Program> ::= { Command }
+<Program> ::= { <Command> }
 <Command> ::= i | d | s | o
 ```
 
