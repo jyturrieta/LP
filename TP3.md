@@ -15,6 +15,14 @@ El lenguaje elegido es **Deadfish**.
   - `s`: Eleva `x` al cuadrado
   - `o`: Muestra el valor actual de `x`
 
+### GIC
+
+```gic
+S -> _
+S -> C
+C -> i | d | s | o
+```
+
 ### BNF
 
 ```bnf
@@ -39,13 +47,7 @@ Command:    i
             o
 ``` 
 
-### GIC
 
-```gic
-S -> _
-S -> C
-C -> i | d | s | o
-```
 
 ### Ejemplo de ejecución
 
