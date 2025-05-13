@@ -4,30 +4,23 @@
 
 ### Árbol de análisis sintáctico
 
-```mermaid
-
-graph TD
-    A[Program] --> B[Command]
-    A --> C[Command]
-    A --> D[Command]
-    A --> E[Command]
-    B --> F[i]
-    C --> G[d]
-    D --> H[s]
-    E --> I[o]
-```
-
-### Diagrama de sintaxis
+El siguiente árbol de análisis sintáctico representa la secuencia de comandos del lenguaje Deadfish para la cadena `iisdo`:
 
 ```mermaid
-graph TD
-    A[Program] --> B[Command]
-    A --> C[Command]
-    A --> D[Command]
-    A --> E[Command]
-    B --> F[i]
-    C --> G[d]
-    D --> H[s]
-    E --> I[o]
+flowchart TD
+    A[PROGRAMA] --> B[SECUENCIA]
+    B --> C1[COMANDO] --> T1["i"]
+    B --> D1[SECUENCIA]
+    D1 --> C2[COMANDO] --> T2["i"]
+    D1 --> D2[SECUENCIA]
+    D2 --> C3[COMANDO] --> T3["s"]
+    D2 --> D3[SECUENCIA]
+    D3 --> C4[COMANDO] --> T4["d"]
+    D3 --> D4[SECUENCIA]
+    D4 --> C5[COMANDO] --> T5["o"]
+    D4 --> D5[SECUENCIA] --> E[ε]
 ```
+
+### Diagrama de análisis sintáctico CONWAY
+
 
