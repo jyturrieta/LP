@@ -8,19 +8,30 @@ El siguiente árbol de análisis sintáctico representa la secuencia de comandos
 
 ```mermaid
 flowchart TD
-    A[PROGRAMA] --> B[SECUENCIA]
-    B --> C1[COMANDO] --> T1["i"]
-    B --> D1[SECUENCIA]
-    D1 --> C2[COMANDO] --> T2["i"]
-    D1 --> D2[SECUENCIA]
-    D2 --> C3[COMANDO] --> T3["s"]
-    D2 --> D3[SECUENCIA]
-    D3 --> C4[COMANDO] --> T4["d"]
-    D3 --> D4[SECUENCIA]
-    D4 --> C5[COMANDO] --> T5["o"]
-    D4 --> D5[SECUENCIA] --> E[ε]
+    %% Configuración de estilos
+    classDef program fill:#6e0dd0,stroke:#333,color:white
+    classDef sequence fill:#2563eb,stroke:#333,color:white
+    classDef command fill:#059669,stroke:#333,color:white
+    classDef terminal fill:#f59e0b,stroke:#333
+    classDef epsilon fill:#9ca3af,stroke:#333
+
+    %% Árbol de parsing
+    A[PROGRAMA]:::program --> B[SECUENCIA]:::sequence
+    B --> C1[COMANDO]:::command --> T1["i"]:::terminal
+    B --> S1[SECUENCIA]:::sequence
+    S1 --> C2[COMANDO]:::command --> T2["i"]:::terminal
+    S1 --> S2[SECUENCIA]:::sequence
+    S2 --> C3[COMANDO]:::command --> T3["s"]:::terminal
+    S2 --> S3[SECUENCIA]:::sequence
+    S3 --> C4[COMANDO]:::command --> T4["d"]:::terminal
+    S3 --> S4[SECUENCIA]:::sequence
+    S4 --> C5[COMANDO]:::command --> T5["o"]:::terminal
+    S4 --> S5[SECUENCIA]:::sequence --> E[ε]:::epsilon
 ```
 
 ### Diagrama de análisis sintáctico CONWAY
 
+```mermaid
 
+
+```
