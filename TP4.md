@@ -31,7 +31,4 @@ flowchart TD
 
 ### Diagrama de análisis sintáctico CONWAY
 
-```mermaid
-
-
-```
+![image](/LP/diagrama.png)
