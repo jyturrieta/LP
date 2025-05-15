@@ -31,4 +31,4 @@ flowchart TD
 
 ### Diagrama de análisis sintáctico CONWAY
 
-![image](/LP/diagrama.png)
+![image](https://raw.githubusercontent.com/jyturrieta/LP/refs/heads/main/diagrama.png)
