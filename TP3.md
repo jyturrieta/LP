@@ -18,8 +18,7 @@ El lenguaje elegido es **Deadfish**.
 ### GIC
 
 ```gic
-S -> λ
-S -> S C
+S -> λ | C
 C -> iC | dC | sC | oC | i | d | s | o
 ```
 
