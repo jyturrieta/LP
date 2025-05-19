@@ -20,7 +20,7 @@ El lenguaje elegido es **Deadfish**.
 ```gic
 S -> λ
 S -> S C
-C -> iC | dC | sC | oC  
+C -> iC | dC | sC | oC | i | d | s | o
 ```
 
 ### BNF
