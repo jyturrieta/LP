@@ -16,17 +16,17 @@ flowchart TD
     classDef epsilon fill:#9ca3af,stroke:#333
 
     %% Árbol de parsing
-    A[PROGRAMA]:::program --> B[SECUENCIA]:::sequence
-    B --> C1[COMANDO]:::command --> T1["i"]:::terminal
-    B --> S1[SECUENCIA]:::sequence
-    S1 --> C2[COMANDO]:::command --> T2["i"]:::terminal
-    S1 --> S2[SECUENCIA]:::sequence
-    S2 --> C3[COMANDO]:::command --> T3["s"]:::terminal
-    S2 --> S3[SECUENCIA]:::sequence
-    S3 --> C4[COMANDO]:::command --> T4["d"]:::terminal
-    S3 --> S4[SECUENCIA]:::sequence
-    S4 --> C5[COMANDO]:::command --> T5["o"]:::terminal
-    S4 --> S5[SECUENCIA]:::sequence --> E[ε]:::epsilon
+    A[SECUENCIA]:::program --> B[COMANDO]:::sequence
+    B --> C1[i]:::command 
+    B --> S1[COMANDO]:::sequence
+    S1 --> C2[i]:::command 
+    S1 --> S2[COMANDO]:::sequence
+    S2 --> C3[s]:::command 
+    S2 --> S3[COMANDO]:::sequence
+    S3 --> C4[d]:::command 
+    S3 --> S4[COMANDO]:::sequence
+    S4 --> C5[o]:::command 
+   
 ```
 
 ### Diagrama de análisis sintáctico CONWAY
