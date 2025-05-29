@@ -36,7 +36,7 @@ quien_es(edad=28, nombre="Luis")
 
 ---
 
-## Tipos de Binding (vinculación de parámetros)
+## Tipos de Binding en parámetros
 
 | **Tipo de Binding**                             | **Definición**                                                                        | **Ej. estático (tiempo de compilación)**               | **Ej. dinámico (tiempo de ejecución)**                     |  
 |--------------------------------------------------|----------------------------------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------|
