@@ -200,3 +200,13 @@ fin
 | **Almacenamiento**    | Estático (tipado explícito)       |
 | **Generación**        | Cuarta generación (lenguaje de alto nivel) |
 | **Manera de Abordar** | Operativo                         |
+
+## Algunas consideraciones
+
+- **Elysion** es un lenguaje diseñado para ser didáctico, por lo que no incluye características avanzadas como concurrencia, gestión de memoria o excepciones.
+- Sobrecarga: No se permite la sobrecarga de funciones o operadores.
+- No se permite la creación de nuevos tipos de datos o estructuras complejas más allá de los tipos primitivos.
+- No se contempla la gestión de errores o excepciones, por lo que cualquier error de sintaxis o semántica detendrá la ejecución del programa.
+- El modelo de ejecución es interpretado, lo que significa que no se compila a código máquina, sino que se ejecuta directamente como pseudocódigo.
+- La entrada de datos se realiza de manera sencilla a través de la instrucción `leer`, y la salida se maneja con `mostrar`.
+- El lenguaje no contempla la creación de bibliotecas o módulos externos, por lo que todas las funciones deben definirse dentro del mismo programa.
