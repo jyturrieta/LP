@@ -105,23 +105,50 @@ mostrar("Hola " + nombre)
 ```bnf
 <programa> ::= inicio <bloques>* fin
 
-<bloques> ::= <declaracion> | <asignacion> | <condicional> | <bucle> | <funcion> | <llamada> | <io>
+<bloques> ::= <declaracion>
+            | <asignacion>
+            | <condicional>
+            | <bucle>
+            | <funcion>
+            | <llamada>
+            | <io>
 
-<declaracion> ::= <identificador>: <tipo> = <valor>
-<asignacion> ::= <identificador> = <valor>
+<declaracion> ::= <identificador>: <tipo> = <expresion>
+<asignacion> ::= <identificador> = <expresion>
 
 <condicional> ::= si <expresion> { <bloques>* } (sino { <bloques>* })?
-<bucle> ::= repetir <identificador> desde <valor> hasta <valor> { <bloques>* }
+
+<bucle> ::= repetir <identificador> desde <expresion> hasta <expresion> { <bloques>* }
           | mientras <expresion> { <bloques>* }
 
-<funcion> ::= funcion <identificador>(<parametros>): <tipo> { <bloques>* retornar <valor> }
+<funcion> ::= funcion <identificador>(<parametros>?) : <tipo> { <bloques>* retornar <expresion> }
 
-<llamada> ::= <identificador>(<argumentos>)
+<parametros> ::= <identificador>: <tipo> (, <parametros>)*
+
+<llamada> ::= <identificador>(<argumentos>?)
+
+<argumentos> ::= <expresion> (, <argumentos>)*
 
 <io> ::= leer(<identificador>) | mostrar(<expresion>)
 
+<expresion> ::= <expresion> <operador> <expresion>
+              | ( <expresion> )
+              | <valor>
+              | <identificador>
+
+<valor> ::= <numero> | <cadena> | verdadero | falso
+
 <tipo> ::= texto | entero | booleano | decimal
-<valor> ::= número | cadena | verdadero | falso | expresión
+
+<operador> ::= + | - | * | / | %
+             | == | != | < | > | <= | >=
+             | y | o | no
+
+<numero> ::= [0-9]+
+<cadena> ::= ".*"
+
+<identificador> ::= [a-zA-Z_][a-zA-Z0-9_]*
+
 ```
 
 ---
