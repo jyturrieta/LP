@@ -145,7 +145,7 @@ mostrar("Hola " + nombre)
              | y | o | no
 
 <numero> ::= [0-9]+
-<cadena> ::= ".*"
+<cadena> ::= [a-zA-Z0-9_]*
 
 <identificador> ::= [a-zA-Z_][a-zA-Z0-9_]*
 
@@ -223,7 +223,7 @@ fin
 |-----------------------|-----------------------------------|
 | **Nombre**            | Elysion                          |
 | **Paradigma**         | Imperativo, estructurado          |
-| **Nivel**             | Medio                             |
+| **Nivel**             | Alto                             |
 | **Dominio**           | Educativo / Didáctico             |
 | **Traductor**         | Interpretado                      |
 | **Almacenamiento**    | Estático (tipado explícito)       |
