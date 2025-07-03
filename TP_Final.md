@@ -201,7 +201,7 @@ fin
 | **Traductor**         | Interpretado                      |
 | **Almacenamiento**    | Estático (tipado explícito)       |
 | **Generación**        | Cuarta generación (lenguaje de alto nivel) |
-| **Manera de Abordar** | Operativo                         |
+
 
 ## Algunas consideraciones
 
