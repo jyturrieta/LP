@@ -1,8 +1,8 @@
 
-# 📘 Lenguaje Esotérico: **LUMINA**
+# 📘 Lenguaje **Elysion**
 
 ## 🎯 Objetivo
-**LUMINA** es un lenguaje esotérico diseñado con fines didácticos y de análisis formal. A diferencia de otros lenguajes esotéricos minimalistas, **su sintaxis es clara y expresiva**, pensada para ser fácil de entender, leer y extender.
+**Elysion** es un lenguaje esotérico diseñado con fines didácticos y de análisis formal. A diferencia de otros lenguajes esotéricos minimalistas, **su sintaxis es clara y expresiva**, pensada para ser fácil de entender, leer y extender.
 
 ---
 
@@ -21,7 +21,7 @@
 `texto`, `entero`, `booleano`, `decimal`
 
 **Ejemplos:**
-```lumina
+```Elysion
 mensaje: texto = "Hola"
 contador: entero = 10
 activo: booleano = verdadero
@@ -32,13 +32,13 @@ pi: decimal = 3.14
 
 ## 🔧 Asignación y Variables
 
-```lumina
+```Elysion
 nombre: texto = "Ana"
 edad: entero = 25
 ```
 
 Reasignación:
-```lumina
+```Elysion
 edad = 26
 ```
 
@@ -46,7 +46,7 @@ edad = 26
 
 ## 🔁 Bucles
 
-```lumina
+```Elysion
 repetir i desde 0 hasta 10 {
   mostrar(i)
 }
@@ -54,7 +54,7 @@ repetir i desde 0 hasta 10 {
 
 O también:
 
-```lumina
+```Elysion
 mientras edad < 30 {
   edad = edad + 1
 }
@@ -64,7 +64,7 @@ mientras edad < 30 {
 
 ## 🔀 Condicionales
 
-```lumina
+```Elysion
 si edad >= 18 {
   mostrar("Mayor de edad")
 } sino {
@@ -76,7 +76,7 @@ si edad >= 18 {
 
 ## ✨ Funciones
 
-```lumina
+```Elysion
 funcion sumar(a: entero, b: entero): entero {
   resultado: entero = a + b
   retornar resultado
@@ -85,7 +85,7 @@ funcion sumar(a: entero, b: entero): entero {
 
 Llamada:
 
-```lumina
+```Elysion
 total: entero = sumar(10, 5)
 ```
 
@@ -93,7 +93,7 @@ total: entero = sumar(10, 5)
 
 ## 📢 Entrada / Salida
 
-```lumina
+```Elysion
 leer(nombre)
 mostrar("Hola " + nombre)
 ```
@@ -105,7 +105,7 @@ mostrar("Hola " + nombre)
 ```bnf
 <programa> ::= inicio <bloques>* fin
 
-<bloques> ::= <declaracion> | <asignacion> | <condicional> | <bucle> | <funcion> | <llamada> | <io>
+<bloques> ::= <declaracion> | <asignacion> | <condicional> | <bucle> | <funcion> | <io>
 
 <declaracion> ::= <identificador>: <tipo> = <valor>
 <asignacion> ::= <identificador> = <valor>
@@ -115,7 +115,6 @@ mostrar("Hola " + nombre)
           | mientras <expresion> { <bloques>* }
 
 <funcion> ::= funcion <identificador>(<parametros>): <tipo> { <bloques>* retornar <valor> }
-<llamada> ::= <identificador>(<argumentos>)
 
 <io> ::= leer(<identificador>) | mostrar(<expresion>)
 
@@ -125,9 +124,9 @@ mostrar("Hola " + nombre)
 
 ---
 
-## 🛠️ Ejemplo Completo
+## 🛠️ Ejemplo
 
-```lumina
+```Elysion
 inicio
 
 nombre: texto = "Ana"
@@ -150,18 +149,54 @@ fin
 
 ---
 
-## 📊 Ficha Técnica
 
-| Aspecto               | Valor                        |
-|-----------------------|------------------------------|
-| Paradigma             | Imperativo, estructurado     |
-| Tipado                | Estático, obligatorio        |
-| Legibilidad           | Alta                         |
-| Funciones             | Sí, con retorno              |
-| Bucles                | Sí (mientras, repetir)       |
-| Condicionales         | Sí (si, sino)                |
-| Entrada / salida      | Sí                           |
-| Objetos               | No                           |
-| Sintaxis esotérica    | No extrema, sino moderada    |
-| Identificadores       | Cualquier combinación válida |
-| Inspiración           | Pseudocódigo, Python         |
+## 📊 Características Técnicas de Elysion
+
+| **Aspecto**                        | **Descripción**                                                                 |
+|------------------------------------|----------------------------------------------------------------------------------|
+| **Paradigma**                      | Imperativo, estructurado                                                        |
+| **Tipo de datos**                  | Primitivos: `texto`, `entero`, `booleano`, `decimal`                            |
+| **Tipado**                         | Estático                                                                        |
+| **Inferencia de tipos**           | No (el tipo debe declararse explícitamente)                                     |
+| **Asignación**                     | Sí, con sintaxis `<identificador>: <tipo> = <valor>` y reasignación posterior   |
+| **Nivel de abstracción**          | Medio (estructura clara, sin colecciones complejas ni objetos)                  |
+| **Independencia de la máquina**   | Sí (lenguaje pseudocódigo, independiente de hardware y sistema operativo)       |
+| **Orientado a objetos**           | No                                                                              |
+| **Esotérico**                     | Moderadamente (por ser diseñado con fines didácticos y no de producción)        |
+| **Extensibilidad**                | Parcial (no permite nuevos tipos, pero sí más funciones)                        |
+| **Modularidad**                   | Parcial (soporta funciones pero no módulos o espacios de nombres)               |
+| **Concurrencia**                  | No                                                                              |
+| **Gestión de errores/excepciones**| No contemplada                                                                  |
+| **Gestión de memoria**            | No modelada (modelo abstracto sin alocación explícita)                          |
+| **Modelo de ejecución**           | Interpretado (pseudocódigo, no compilado)                                       |
+| **Entrada de datos**              | Sí (`leer(<identificador>)`)                                                    |
+
+
+## 🔁 Control de Flujo en Elysion
+
+| **Mecanismo**                            | **Soportado**                            |
+|------------------------------------------|-------------------------------------------|
+| **Secuencial**                           | ✔️ Sí                                     |
+| **Condicional**                          | ✔️ Sí (`si`, `sino`)                      |
+| **Iterativo**                            | ✔️ Sí (`mientras`, `repetir`)             |
+| **Recursividad**                         | ✔️ Sí (funciones pueden llamarse a sí mismas) |
+| **Pasaje de parámetros**                 | ✔️ Por valor                              |
+| **Valores por defecto en parámetros**    | ❌ No                                      |
+| **Funciones con retorno**                | ✔️ Sí (`retornar`)                        |
+| **Saltos incondicionales (`goto`)**      | ❌ No                                      |
+| **Saltos controlados (`break`, `continue`)**| ❌ No                                      |
+| **Control estructurado**                 | ✔️ Sí                                      |
+| **Control no estructurado**              | ❌ No                                      |
+
+## 🧾 Ficha Técnica de Elysion
+
+| **Campo**             | **Valor**                         |
+|-----------------------|-----------------------------------|
+| **Nombre**            | Elysion                          |
+| **Paradigma**         | Imperativo, estructurado          |
+| **Nivel**             | Medio                             |
+| **Dominio**           | Educativo / Didáctico             |
+| **Traductor**         | Interpretado                      |
+| **Almacenamiento**    | Estático (tipado explícito)       |
+| **Generación**        | Cuarta generación (lenguaje de alto nivel) |
+| **Manera de Abordar** | Operativo                         |
