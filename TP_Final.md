@@ -184,9 +184,9 @@ fin
 | **Recursividad**                         | ✔️ Sí (funciones pueden llamarse a sí mismas) |
 | **Pasaje de parámetros**                 | ✔️ Por valor                              |
 | **Valores por defecto en parámetros**    | ❌ No                                      |
-| **Funciones con retorno**                | ✔️ Sí (`retornar`)                        |
-| **Saltos incondicionales (`goto`)**      | ❌ No                                      |
-| **Saltos controlados (`break`, `continue`)**| ❌ No                                      |
+| **Funciones con retorno**                | ✔️ Sí                        |
+| **Saltos incondicionales**      | ❌ No                                      |
+| **Saltos controlados**| ❌ No                                      |
 | **Control estructurado**                 | ✔️ Sí                                      |
 | **Control no estructurado**              | ❌ No                                      |
 
