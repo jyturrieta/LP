@@ -105,7 +105,7 @@ mostrar("Hola " + nombre)
 ```bnf
 <programa> ::= inicio <bloques>* fin
 
-<bloques> ::= <declaracion> | <asignacion> | <condicional> | <bucle> | <funcion> | <io>
+<bloques> ::= <declaracion> | <asignacion> | <condicional> | <bucle> | <funcion> | <llamada> | <io>
 
 <declaracion> ::= <identificador>: <tipo> = <valor>
 <asignacion> ::= <identificador> = <valor>
@@ -115,6 +115,8 @@ mostrar("Hola " + nombre)
           | mientras <expresion> { <bloques>* }
 
 <funcion> ::= funcion <identificador>(<parametros>): <tipo> { <bloques>* retornar <valor> }
+
+<llamada> ::= <identificador>(<argumentos>)
 
 <io> ::= leer(<identificador>) | mostrar(<expresion>)
 
@@ -188,7 +190,7 @@ fin
 | **Control estructurado**                 | ✔️ Sí                                      |
 | **Control no estructurado**              | ❌ No                                      |
 
-## 🧾 Ficha Técnica de Elysion
+## 🧾 Resumen técnico de Elysion
 
 | **Campo**             | **Valor**                         |
 |-----------------------|-----------------------------------|

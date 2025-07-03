@@ -7,3 +7,7 @@
 #### TP 3: [Lenguajes esotéricos: Deadfish](TP3.md)
 
 #### TP 4: [Deadfish: Árbol de análisis sintáctico y diagrama de análisis sintáctico](TP4.md)
+
+#### TP 5: [Parámetros](TP5.md)
+
+### TP Final: [Lenguaje Elysion](TP_Final.md)
